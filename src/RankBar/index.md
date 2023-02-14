@@ -26,4 +26,4 @@ export default () => {
   )
 };
 ```
-<API></API>
+<API id='RankBar' ></API>
