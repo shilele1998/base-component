@@ -1,20 +1,13 @@
 ---
 title: {template}
-group:
-  title: 组件
-  path: /base
 ---
 
-# {template}
+Demo:
 
-{template} 介绍
+```tsx
+import React from 'react';
+import {template}  from './demos';
 
-## 代码示例
+export default () => <{template} />;
 
-<code src="./demos/index.tsx">
-
-### 基本参数
-
-| 参数  | 说明 | 类型     | 默认值 |
-| ----- | ---- | -------- | ------ |
-| style | 样式 | `object` | -      |
+```

@@ -6,12 +6,12 @@
     "importHelpers": true,
     "jsx": "react",
     "esModuleInterop": true,
+    "sourceMap": true,
     "types": ["jest"],
     "strict": true,
     "skipLibCheck": true,
     "declaration": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true
   },
   "exclude": [

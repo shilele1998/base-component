@@ -6,7 +6,7 @@ const Index: FC<Props> = (props) => {
   const { className = "", ...restProps} = props;
 
   return (
-    <div className={`{{template}} ${className}`} {...restProps}>
+    <div className={`operate-in-table ${className}`} {...restProps}>
       demo
     </div>
   );

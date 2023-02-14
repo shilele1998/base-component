@@ -6,5 +6,28 @@ export default defineConfig({
   logo: 'https://s1.imagehub.cc/images/2023/02/13/ec959c634558cea731bd3a03056b5597.png',
   outputPath: 'docs-dist',
   apiParser: {},
+  extraBabelPlugins: [
+    // 本地文档按需加载样式
+    [
+      'import',
+      {
+        libraryName: 'base-component',
+        camel2DashComponentName: false,
+        libraryDirectory: 'src',
+        style: true,
+      },
+      'base-component',
+    ],
+    // antd 按需加载
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'lib',
+        style: true,
+      },
+      'antd',
+    ],
+  ],
   // more config: https://d.umijs.org/config
 });

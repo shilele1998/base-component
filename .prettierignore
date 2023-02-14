@@ -10,4 +10,5 @@ docs/*
 es/*
 lib/*
 docsDist/*
+component-template/*
 **/Empty/style/*.less

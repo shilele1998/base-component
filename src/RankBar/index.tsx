@@ -6,7 +6,6 @@ import React, {
 import * as echarts from 'echarts';
 import { Props } from './type';
 import { myColor } from './const'
-import './index.less';
 
 const defaultStyle = {};
 const Index: FC<Props> = props => {

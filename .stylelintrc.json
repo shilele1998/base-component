@@ -1,0 +1,12 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "ignoreFiles": ["node_modules/**/*", "component-template/**/*"],
+  "defaultSeverity": "warning",
+  "rules": {
+    "font-family-no-missing-generic-family-keyword": null,
+    "declaration-colon-newline-after": null,
+    "selector-pseudo-class-no-unknown": null,
+    "property-no-unknown": null,
+    "no-descending-specificity": null
+  }
+}

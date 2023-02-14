@@ -6,13 +6,14 @@
     "start": "dumi dev",
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
-    "build": "father build",
+    "build": "dumi build",
     "deploy": "npm run docs:build && npm run docs:deploy",
     "prettier": "prettier --write \"**/*.{js,jsx,tsx,ts,less,md,json}\"",
+    "eslint": "eslint .eslintrc.js ./src --fix",
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
-    "comp": "node scripts/generate-component.js"
+    "comp": "node scripts/common-component.js"
   },
   "files": [
     "dist"
@@ -27,7 +28,12 @@
       "prettier --write"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+        "prettier --parser=typescript --write",
+        "yarn eslint",
+        "git add"
+    ],
+    "*.{less,scss,ts?(x)}": [
+        "yarn build:lib"
     ]
   },
   "dependencies": {
