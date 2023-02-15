@@ -1,6 +1,4 @@
----
-title: Empty
----
+## Empty
 ## 代码示例
 
 ```tsx
