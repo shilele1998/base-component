@@ -5,7 +5,7 @@
 import React, { useMemo, useState } from 'react';
 import { PlusOutlined } from '@ant-design/icons';
 import ChinaMap from '../../index';
-import './index.less';
+import styles from  './index.less';
 
 type StoreItem = {
   areaName: string;
@@ -115,7 +115,7 @@ const BaseMap = () => {
 
   return (
     <ChinaMap
-      mapClassName='container'
+      mapClassName={styles.container}
       onClickProvince={onClickProvince}
       zoomInRender={zoomInRender}
       seriesProps={series}

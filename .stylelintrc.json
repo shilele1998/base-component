@@ -1,6 +1,6 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-  "ignoreFiles": ["node_modules/**/*", "component-template/**/*"],
+  "ignoreFiles": ["node_modules/**/*", "component-template/**/*", "**/Empty/style/*.less"],
   "defaultSeverity": "warning",
   "rules": {
     "font-family-no-missing-generic-family-keyword": null,

@@ -39,7 +39,7 @@ import { Table } from '@base-component';
 [
   "import",
   {
-    "libraryName": "@tuya-fe/ka-component",
+    "libraryName": "base-component",
     "libraryDirectory": "lib",
     "style": true,
     "camel2DashComponentName": false

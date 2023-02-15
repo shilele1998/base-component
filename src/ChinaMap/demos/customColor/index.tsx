@@ -4,10 +4,7 @@
  */
 import React from 'react';
 import * as echarts from 'echarts';
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { ChinaMap } from '@tuya-fe/ka-datav-base';
+import { ChinaMap } from 'base-component';
 import styles from './index.less';
 
 const BaseMap = () => {

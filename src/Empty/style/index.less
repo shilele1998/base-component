@@ -1,6 +1,5 @@
-@import './colorPalette.less';
 
-.ka-component-empty {
+.empty {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,7 +16,7 @@
     margin-top: 0;
   }
 
-  .ka-component-empty-title {
+  .empty-title {
     font-size: 16px;
     color: #1f1f1f;
     font-weight: 500;
@@ -25,58 +24,12 @@
     margin: 8px 0;
   }
 
-  .ka-component-empty-description {
+  .empty-description {
     color: #bfbfbf;
     display: block;
   }
 
-  .ka-component-empty-children {
+  .empty-children {
     margin: 24px 0 0 0;
-  }
-}
-
-// empty-image
-.ka-component-empty-image {
-  height: 100%;
-
-  .ka-component-empty-image-paint-linear-colorful
-    .ka-component-empty-image-linear-color-1 {
-    stop-color: color(~`colorPalette('@{primary-color}', 5) `);
-  }
-
-  .ka-component-empty-image-paint-linear-colorful
-    .ka-component-empty-image-linear-color-2 {
-    stop-color: color(~`colorPalette('@{primary-color}', 6) `);
-  }
-}
-
-// svg
-.ka-component-empty-image-no-search-data {
-  height: 100%;
-  margin: auto;
-
-  &-circle {
-    fill: white;
-  }
-
-  .ka-component-empty-image-colorful &-circle {
-    fill: color(~`colorPalette('@{primary-color}', 1) `);
-  }
-
-  .ka-component-empty-image-colorful &-path {
-    fill: color(~`colorPalette('@{primary-color}', 6) `);
-  }
-}
-
-// 404
-.ka-component-empty-image-404 {
-  .ka-component-empty-image-paint2-linear-colorful
-    .ka-component-empty-image-linear-color-1 {
-    stop-color: color(~`colorPalette('@{primary-color}', 5) `);
-  }
-
-  .ka-component-empty-image-paint2-linear-colorful
-    .ka-component-empty-image-linear-color-2 {
-    stop-color: color(~`colorPalette('@{primary-color}', 6) `);
   }
 }

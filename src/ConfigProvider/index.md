@@ -1,8 +1,5 @@
 ---
 title: ConfigProvider
-group:
-  title: 组件
-  path: /base
 ---
 
 # ConfigProvider
@@ -17,6 +14,6 @@ group:
 
 | 参数  | 说明 | 类型     | 默认值 |
 | ----- | ---- | -------- | ------ |
-| kaLocale | 语言包，语言包可到 @tuya-fe/ka-component/lib/ConfigProvider/locales 目录下寻找 | `object` | -      |
+| kaLocale | 语言包，语言包可到 base-component/lib/ConfigProvider/locales 目录下寻找 | `object` | -      |
 
 [ConfigProvider配置参考antd文档](https://ant.design/components/config-provider-cn/#API)
