@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import  { Empty }  from 'base-component';
+import  { Empty }  from 'management-platform-base-component';
 import { Button } from 'antd';
 
 export default () => {

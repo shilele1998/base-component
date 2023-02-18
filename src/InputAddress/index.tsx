@@ -1,6 +1,6 @@
 import React, { FC, useState } from 'react';
 import Input from '../Input';
-import AdressModal from '../AddressModal';
+import AdressModal from '../GdMap';
 import { EnvironmentOutlined } from '@ant-design/icons';
 
 interface Value {

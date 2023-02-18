@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import  { {template} }  from 'base-component';
+import  { {template} }  from 'management-platform-base-component';
 
 export default () => {
   return (

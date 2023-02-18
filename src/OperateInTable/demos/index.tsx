@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import  { OperateInTable }  from 'base-component';
+import  { OperateInTable }  from 'management-platform-base-component';
 
 export default () => {
   const items = [

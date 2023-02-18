@@ -8,4 +8,5 @@ export { default as UploadExcel } from './UploadExcel';
 export { default as Select } from './Select';
 export { default as Modal } from './Modal';
 export { default as Input } from './Input';
-export { default as AddressModal } from './AddressModal';
+export { default as GdMap } from './GdMap';
+export { default as Preview } from './Preview';

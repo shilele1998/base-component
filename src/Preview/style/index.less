@@ -1,0 +1,43 @@
+.preview {
+  pointer-events: initial !important;
+  width: 100vw !important;
+  top: 0 !important;
+  max-width: initial !important;
+  padding: 0 !important;
+
+  .preview-modal-render {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-operations {
+      padding: 0 12px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      box-sizing: border-box;
+      width: 100%;
+      height: 46px;
+      color: #f0f7ff;
+      font-size: 14px;
+      background: rgba(3, 10, 26, 0.25);
+
+      > span {
+        font-size: 18px;
+        cursor: pointer;
+      }
+    }
+
+    .preview-modal-render-item {
+      width: 100vw;
+      height: calc(100vh - 46px) !important;
+    }
+  }
+}

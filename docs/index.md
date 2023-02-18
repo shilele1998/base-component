@@ -2,7 +2,7 @@
 title: 介绍
 ---
 
-## [<img src="https://s1.imagehub.cc/images/2023/02/13/6bf6bc7bbaba8043d971f9ab22bd7482.png">](https://github.com/shilele1998/base-component.git)
+## [<img src="https://s1.imagehub.cc/images/2023/02/13/6bf6bc7bbaba8043d971f9ab22bd7482.png">](https://github.com/shilele1998/management-platform-base-component.git)
 
 ## 依赖 UI 库
 
@@ -21,13 +21,13 @@ Enhance Antd Design
 ## 安装
 
 ```bash
-yarn add base-component
+yarn add management-platform-base-component
 ```
 
 ## 使用
 
 ```bash
-import { Table } from '@base-component';
+import { Table } from '@management-platform-base-component';
 ```
 
 ## 按需加载
@@ -39,7 +39,7 @@ import { Table } from '@base-component';
 [
   "import",
   {
-    "libraryName": "base-component",
+    "libraryName": "management-platform-base-component",
     "libraryDirectory": "lib",
     "style": true,
     "camel2DashComponentName": false

@@ -3,7 +3,7 @@
  * desc: 通过tooltip设置散点图的tooltip，通过onClickMap获取地图实例的点击事件。
  */
 import React, { useMemo, useState } from 'react';
-import { ChinaMap } from 'base-component';
+import { ChinaMap } from 'management-platform-base-component';
 import storeIcon from './store.png';
 import styles from './index.less';
 

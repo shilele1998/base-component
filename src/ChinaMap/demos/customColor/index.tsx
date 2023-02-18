@@ -4,7 +4,7 @@
  */
 import React from 'react';
 import * as echarts from 'echarts';
-import { ChinaMap } from 'base-component';
+import { ChinaMap } from 'management-platform-base-component';
 import styles from './index.less';
 
 const BaseMap = () => {

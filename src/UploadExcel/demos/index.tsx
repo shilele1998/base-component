@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './index.less';
 import { UploadFile } from 'antd/es/upload';
-import { UploadExcel } from 'base-component';
+import { UploadExcel } from 'management-platform-base-component';
 
 export default () => {
   const [fileList, setFileList] = useState<UploadFile[]>([

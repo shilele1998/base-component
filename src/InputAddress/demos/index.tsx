@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.less';
-import { InputAddress } from 'base-component';
+import { InputAddress } from 'management-platform-base-component';
 
 export default () => {
   const [value, setValue] = useState({

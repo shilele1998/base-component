@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import { Select, ConfigProvider } from 'base-component';
+import { Select, ConfigProvider } from 'management-platform-base-component';
 
 export default () => {
   return (

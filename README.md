@@ -1,4 +1,4 @@
-# base-component
+# management-platform-base-component
 
 ## Getting Started
 

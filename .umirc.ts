@@ -11,12 +11,12 @@ export default defineConfig({
     [
       'import',
       {
-        libraryName: 'base-component',
+        libraryName: 'management-platform-base-component',
         camel2DashComponentName: false,
         libraryDirectory: 'src',
         style: true,
       },
-      'base-component',
+      'management-platform-base-component',
     ],
     // antd 按需加载
     [

@@ -2,7 +2,6 @@ import { Map, Marker } from 'react-amap';
 import React, { FC, useState, useEffect, ReactNode } from 'react';
 import debounce from 'lodash/debounce';
 import { Typography, ModalProps } from 'antd';
-import Modal from '../Modal';
 import Select from '../Select';
 import { DefaultOptionType } from 'rc-select/lib/Select';
 import { SearchOutlined } from '@ant-design/icons';
@@ -25,7 +24,6 @@ interface Props extends ModalProps {
   readonly?: boolean;
   amapkey: string;
   value?: Value;
-  onChange?: (value: Value) => void;
 }
 
 interface OptionsType extends Omit<DefaultOptionType, 'value'>, Value {
@@ -38,21 +36,14 @@ const Index: FC<Props> = props => {
   const {
     readonly = false,
     value,
-    width = 896,
     className = '',
-    title = '地址',
-    footer,
-    onCancel,
-    onChange,
     amapkey,
-    visible,
-    ...restProps
   } = props;
   const [data, setData] = useState<OptionsType[]>();
   const [nextValue, setNextValue] = useState<Value>();
 
   useEffect(() => {
-    if (visible && value && !data) {
+    if (value && !data) {
       setData([
         {
           location: value.location,
@@ -72,12 +63,7 @@ const Index: FC<Props> = props => {
       ]);
       setNextValue(value);
     }
-  }, [value, data, visible]);
-
-  const handleCancel = (event: React.MouseEvent<HTMLElement>) => {
-    setData(undefined);
-    onCancel?.(event);
-  };
+  }, [value, data]);
 
   const handleSearch = async (newValue: string) => {
     if (newValue) {
@@ -133,18 +119,6 @@ const Index: FC<Props> = props => {
     }
   };
 
-  const handleOk = (event: React.MouseEvent<HTMLElement>) => {
-    if (nextValue) {
-      onChange?.({
-        name: nextValue?.name!,
-        district: nextValue?.district!,
-        location: nextValue?.location!,
-        address: nextValue?.address!,
-      });
-      handleCancel(event);
-    }
-  };
-
   const tooltip = (option: DefaultOptionType) => {
     return (
       <Typography className="address-modal-tooltip">
@@ -156,17 +130,7 @@ const Index: FC<Props> = props => {
   };
 
   return (
-    <Modal
-      visible={visible}
-      title={title}
-      width={width}
-      onCancel={handleCancel}
-      destroyOnClose
-      onOk={handleOk}
-      className={`address-modal ${className}`}
-      footer={readonly ? null : footer}
-      {...restProps}
-    >
+    <div className={`gd-map ${className}`} >
       {!readonly && (
         <Select
           showSearch
@@ -189,13 +153,13 @@ const Index: FC<Props> = props => {
         <Map
           plugins={['ToolBar']}
           amapkey={amapkey}
-          zoom={16}
+          zoom={18}
           center={nextValue?.location}
         >
           {nextValue?.location && <Marker position={nextValue.location} />}
         </Map>
       </div>
-    </Modal>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import  { Icon }  from 'base-component';
+import  { Icon }  from 'management-platform-base-component';
 import {ReactComponent as MyIcon} from '../tiger.svg';
 
 export default () => {

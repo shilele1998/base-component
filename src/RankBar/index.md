@@ -4,7 +4,7 @@
 
 ```tsx
 import React from 'react';
-import { RankBar } from 'base-component';
+import { RankBar } from 'management-platform-base-component';
 
 export default () => {
   return (

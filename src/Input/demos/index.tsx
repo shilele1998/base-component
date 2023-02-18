@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './index.less';
-import { Input, ConfigProvider } from 'base-component';
+import { Input, ConfigProvider } from 'management-platform-base-component';
 
 export default () => {
   const [value, setValue] = useState<string>();

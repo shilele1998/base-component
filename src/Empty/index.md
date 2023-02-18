@@ -6,7 +6,7 @@
  * desc: 内置图片
  */
 import React from 'react';
-import { Empty } from 'base-component';
+import { Empty } from 'management-platform-base-component';
 
 export default ()=> <Empty />;
 ```

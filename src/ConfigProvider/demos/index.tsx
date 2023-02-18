@@ -1,7 +1,7 @@
 import React from 'react';
 import { Pagination, Tabs } from 'antd';
 import zh_CN from 'antd/lib/locale/zh_CN';
-import { ConfigProvider }  from 'base-component';
+import { ConfigProvider }  from 'management-platform-base-component';
 
 export default () => {
   return (
