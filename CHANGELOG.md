@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0-beta.1](https://github.com/shilele1998/base-component/compare/v1.1.0-beta.0...v1.1.0-beta.1) (2023-02-18)
+
+
+### Bug Fixes
+
+* fix ([fee6821](https://github.com/shilele1998/base-component/commit/fee68210dac4e31040a9ccbe13fe1a3a2d7fec65))
+
 ## 1.1.0-beta.0 (2023-02-18)
 
 
