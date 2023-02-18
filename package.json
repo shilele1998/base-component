@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "base-component",
-  "version": "1.0.0",
+  "version": "1.1.0-beta.0",
   "scripts": {
     "start": "dumi dev",
     "docs:build": "dumi build",
@@ -13,7 +13,13 @@
     "test": "umi-test",
     "test:coverage": "umi-test --coverage",
     "prepublishOnly": "npm run build",
-    "comp": "node scripts/common-component.js"
+    "comp": "node scripts/common-component.js",
+    "release": "standard-version",
+    "release:beta": "standard-version --prerelease beta",
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch"
   },
   "files": [
     "dist"
