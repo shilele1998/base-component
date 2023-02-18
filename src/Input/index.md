@@ -1,8 +1,5 @@
 ## Input
 
-- 新增默认placeholder
-- Input、Input.Search、Input.TextArea、Input.Password新增`trim`
-
 ## 代码示例
 
 ```tsx

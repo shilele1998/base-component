@@ -10,23 +10,30 @@ export default () => {
   return (
     <ConfigProvider>
       <div className="input-test">
-        <Input />
+        <label className='label' htmlFor="base">基本使用:</label>
+        <Input id="base"/>
         &nbsp;
-        <Input value={value} onChange={e => setValue(e.target.value)} trim />
+        <label className='label' htmlFor="trim">首尾禁止输入空格:</label>
+        <Input id="trim" value={value} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue(e.target.value)} trim />
         &nbsp;
+        <label className='label' htmlFor="search">带有搜索按钮的输入框:</label>
         <Input.Search
+          id="search"
           value={value2}
-          onChange={e => setValue2(e.target.value)}
+          onChange={(e: React.ChangeEvent<HTMLInputElement>)=> setValue2(e.target.value)}
           trim
         />
         &nbsp;
+        <label className='label' htmlFor="textArea">文本域用作多行输入:</label>
         <Input.TextArea
           value={value3}
-          onChange={e => setValue3(e.target.value)}
+          id="textArea"
+          onChange={(e: React.ChangeEvent<HTMLInputElement>) => setValue3(e.target.value)}
           trim
         />
         &nbsp;
-        <Input.Password autoComplete="new-password" />
+        <label className='label' htmlFor="password">密码框:</label>
+        <Input.Password  id="password" autoComplete="new-password" />
       </div>
     </ConfigProvider>
   );
